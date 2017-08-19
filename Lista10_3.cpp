@@ -128,6 +128,20 @@ class ListaEnlazada{
 				insertaEnDoble(n,actual->dato);
 			}
 		}
+	
+		void minMax(){
+			int min,max;
+			min = max = cabecera->dato;
+			for(Nodo *actual = cabecera; actual!=nullptr; actual = actual->siguiente){
+				if(actual->dato > max){
+					max = actual->dato;
+				}
+				if(actual->dato < min){
+					min = actual->dato;
+				}
+			}
+			cout <<"Minimo: "<<min <<" Maximo: "<<max;
+		}
 };
 
 
