@@ -159,5 +159,6 @@ int main(int argc,char **argv){
 	lista.insertarAlFinal(-8);
 	lista.insertaEnListaDoble(&nd);
 	mostrarListaDoble(nd);
+	delete nd;
 	return 0;
 }
